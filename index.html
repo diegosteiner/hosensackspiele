@@ -1,14 +1,15 @@
 ---
 layout: default
-title: Jekyll Themes
+title: Hosensackspiele
 ---
-
-<div class="gallery">
+<article class="post">
+<ul>
   {% for post in site.posts %}
-  <div class="item">
+  <li class="item">
     <a class="item-inner" href="{{ post.url | prepend: site.github.url }}">
       <div class="item-name">{{ post.title }}</div>
     </a>
-  </div>
+  </li>
   {% endfor %}
-</div>
+</ul>
+</article>
